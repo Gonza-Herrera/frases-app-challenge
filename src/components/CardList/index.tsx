@@ -3,10 +3,8 @@ import { Phrase } from "../../context/type";
 import CardComponent from "../Card";
 import PhraseContext from "../../context/phrases";
 import { PhraseContextType } from "../../context/type";
+import { Props } from "../../models/phrases";
 
-interface Props {
-  phrases: Phrase[];
-}
 
 export const CardListComponent: FC<Props> = () => {
   const { phrasesContext, search } = useContext(
